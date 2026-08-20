@@ -59,7 +59,7 @@ Every case reduces to the same five moves. **The section *headings* differ per c
 5. **Safe Next Action** — the cheapest, most reversible next step. Usually "verify X before committing," not "ship it" or "escalate."
 
 > [!TIP]
-> **Calibration is the most-rewarded skill in this exam.** "It smells, don't ship it yet" · "reproduces but causally unidentified" · "not supported → hold and verify, not fraud" — these calibrated verdicts score **higher** than a confident yes/no that the evidence can't carry.
+> **Calibration is the most-rewarded skill in this exam.** "It smells, don't ship it yet" · "reproduces exactly but overstates — report the identifiable ~17.5%, not the 31.6% headline" · "not supported → hold and verify, not fraud" — these calibrated verdicts score **higher** than a confident yes/no that the evidence can't carry.
 
 ---
 
@@ -91,7 +91,7 @@ Click any case for its full guide. **Verdicts below are the defensible stance th
 | **3A** | [Swiss Mismatch Control](3A.md) | Asterion · EMEA Customs | **150–3000** | 15 min | **Do not escalate.** Declared `90211000` **is** the Swiss-approved code; the flag compares it to the EU/Helios code — a **cross-code-system false positive** (same HS6). |
 | **3B** | [Is the Irish Preference Claim Supported?](3B.md) | Asterion · EMEA Customs | 200–6000 | 45 min | **Not supported on the evidence — hold & verify.** No linked support; the only Irish declaration is **expired** before the entry. **"Not established," not fraud.** |
 | **4A** | [QC Queue Smell Test](4A.md) | Aurelia · Quality Systems | 200–6000 | 15 min | **It smells — don't ship the KPI yet.** 70.6% of `qcore_release_ts` sit on the **02:10 daily-snapshot boundary** (wrong clock); exceptions not excluded. |
-| **4B** | [Spare-Parts Search](4B.md) | Aurelia · Maintenance | 200–6000 | 30 min | **Transfer 8 · needs-check 12 · not-transferable 4** of 24 open buys ($152,558). The 4 non-transferable are servo parts reserved for critical lines. |
+| **4B** | [Spare-Parts Search](4B.md) | Aurelia · Maintenance | 200–6000 | 30 min | **Transfer 8 · needs-check 12 · not-transferable 4** of 24 open buys (**$166,495.60** apparent value = qty × unit quote; a naive `external_quote_usd` column-sum undercounts at $152,558). The 4 non-transferable are servo parts reserved for critical lines. |
 
 > [!NOTE]
 > **Gates differ:** **2A and 3A** use the **shorter 150–3000** window (concise answers expected); the other six use **200–6000**. All eight award **2.5 participation marks** for a valid-length submission; the other 10 are graded offline.
@@ -195,3 +195,6 @@ Every **Evidence Table** uses the same header:
 > **Final reminder.** This guide exists to save you time and give you a defensible starting point — **the analysis, the judgment, and the words must become yours.** Verify the facts you rely on, pick a stance you can defend under questioning, and write your own submission. A guide is a little help — it is *not* the answer.
 
 *Good luck. Reason well, cite everything, and calibrate.*
+
+
+
